@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumiqued Children's Clinic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f5fc;
+    text-align: center;
+        }
+        .header {
+            background: blue;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+        }
+        .text-section {
+            max-width: 50%;
+        }
+        .cta-buttons {
+            margin-top: 20px;
+        }
+        .cta-buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background: purple;
+            color: white;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+        .cta-buttons a:last-child {
+            background: none;
+            color: purple;
+        }
+        .image-section img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .text-section, .image-section {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"> 
+            <img src="lcclogo.png" alt="LOGO" width="75" height="75"></div>
+        <ul class="nav-links">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about_us.html">ABOUT US</a></li>
+            <li><a href="for_parents.html">FOR PARENTS</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </div>
+    <div class="container"> 
+        <div class="text-section">
+            <h1>Lumiqued Children's Clinic</h1>
+            <p>Let's be partners in taking care of your children. Message us for appointment bookings and other inquiries.</p>
+            <div class="cta-buttons">
+                <a href="">CHAT WITH US</a>
+                <a href="fillout.html">Fill out the form</a>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="DOCTORA.jpg" alt="Pediatrician">
+        </div>
+    </div>
+
+</body>
+</html>
+

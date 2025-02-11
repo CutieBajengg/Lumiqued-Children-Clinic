@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Patient Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+            flex-direction: column;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .radio-group {
+            display: flex;
+            gap: 10px;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        button {
+            background-color: purple;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>New Patient Form</h2>
+        <p>To start your consultation, please fill out the form as part of the required clinic process.</p>
+        
+        <form>
+            <div class="input-group">
+                <label for="name">Patient Name *</label>
+                <input type="text" id="name" placeholder="Last, First Name, Middle Initial" required>
+            </div>
+
+            <div class="input-group">
+                <label>Sex *</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="sex" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="sex" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <label for="birthday">Birthday *</label>
+                <input type="date" id="birthday" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="address">Address *</label>
+                <input type="text" id="address" placeholder="Complete Address" required>
+            </div>
+            
+            <div class="btn-group">
+                <button type="submit">SUBMIT</button>
+                <button type="reset">CLEAR</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

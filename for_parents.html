@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f5fc;
+    text-align: center;
+}
+
+.services {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #555;
+    font-size: 16px;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+        }
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card i {
+    font-size: 30px;
+    color: #8a2be2;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.fillbtn{
+    text-decoration: none;
+            padding: 5px 5px;
+            background: purple;
+            color: white;
+}
+
+</style>
+<div class="navbar">
+    <div class="logo"> <strong></strong></div>
+    <ul class="nav-links">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about_us.html">ABOUT US</a></li>
+        <li><a href="for_parents.html">FOR PARENTS</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+</div>
+    <section class="services">
+        <h2>Clinic Forms</h2>
+        <a class = "fillbtn" href="fillout.html">New Patient</a>
+        <h2>For Parents</h2>
+        <p>We offer a comprehensive range of pediatric services to meet your child's healthcare needs and to ensure a smooth and efficient experience at our clinic, we have made our forms readily accessible for your convenience.</p>
+        <h2>Services</h2>
+        <p>We offer the best choices for you. Adjust these choices to your health concerns and make sure 
+            you undergo treatment with our highly qualified doctor. Consult the type of service that is 
+            suitable for your health needs.</p>
+        <div class="service-container">
+            <div class="service-card">
+                <i class="fas fa-user-md"></i>
+                <h3>Face-to-face Consultation</h3>
+                <p>Talk to a dedicated doctor about your child's concerns.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-video"></i>
+                <h3>Schedule Appointments</h3>
+                <p>Schedule your Appointments and Consult Doctor</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-syringe"></i>
+                <h3>Vaccination</h3>
+                <p>Get your baby or yourself vaccinated at affordable rates.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
