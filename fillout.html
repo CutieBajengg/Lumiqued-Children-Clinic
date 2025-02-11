@@ -62,9 +62,35 @@
         button:hover {
             opacity: 0.8;
         }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: black;}
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <div class="logo"> 
+            <img src="lcclogo.png" alt="LOGO" width="75" height="75"></div>
+        <ul class="nav-links">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about_us.html">ABOUT US</a></li>
+            <li><a href="for_parents.html">FOR PARENTS</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </div>
     <div class="container">
         <h2>New Patient Form</h2>
         <p>To start your consultation, please fill out the form as part of the required clinic process.</p>
