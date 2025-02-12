@@ -12,6 +12,7 @@
             background-color: #f8f5fc;
             text-align: center;
             display: flex;
+            flex-direction: column;
         }
         .sidebar {
             width: 250px;
@@ -66,9 +67,10 @@
             font-size: 18px;
             cursor: pointer;
             border-radius: 5px;
+            z-index: 1000;
         }
         .back-btn {
-            background: red;
+            background: grey;
             color: white;
             border: none;
             padding: 10px;
@@ -77,10 +79,10 @@
             border-radius: 5px;
         }
         .content {
-            margin-left: 50px;
             padding: 50px;
             flex-grow: 1;
             transition: margin-left 0.3s ease;
+            margin-left: 0;
         }
         .content.shift {
             margin-left: 260px;
@@ -115,20 +117,13 @@
         .service-card:hover {
             transform: scale(1.05);
         }
-        .service-card i {
-            font-size: 30px;
-            color: #8a2be2;
-            margin-bottom: 10px;
-        }
-        h3 {
-            font-size: 18px;
-            margin: 10px 0;
-        }
         .fillbtn {
             text-decoration: none;
-            padding: 5px 5px;
+            padding: 10px 20px;
             background: purple;
             color: white;
+            border-radius: 5px;
+            display: inline-block;
         }
         @media (max-width: 768px) {
             .sidebar {
@@ -141,26 +136,26 @@
             .content.shift {
                 margin-left: 210px;
             }
+            .service-container {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-
     <button class="menu-btn" onclick="toggleSidebar()">☰</button>
-
     <div class="sidebar" id="sidebar">
-        <button class="back-btn" onclick="toggleSidebar()">← Back</button>
+        <button class="back-btn" onclick="toggleSidebar()">←</button>
         <div class="logo"> 
             <img src="lcclogo.png" alt="LOGO">
         </div>
         <ul class="nav-links">
             <li><a href="home.html">HOME</a></li>
-            <li><a href="about_us.html">ABOUT US</a></li>
+            <li><a href="about_us.html">APPOINTMENTS</a></li>
             <li><a href="for_parents.html">FOR PARENTS</a></li>
             <li><a href="contact.html">CONTACT US</a></li>
         </ul>
     </div>
-
     <div class="content" id="content">
         <section class="services">
             <h2>Clinic Forms</h2>
@@ -171,24 +166,20 @@
             <p>We offer the best choices for you. Adjust these choices to your health concerns and make sure you undergo treatment with our highly qualified doctor. Consult the type of service that is suitable for your health needs.</p>
             <div class="service-container">
                 <div class="service-card">
-                    <i class="fas fa-user-md"></i>
                     <h3>Face-to-face Consultation</h3>
                     <p>Talk to a dedicated doctor about your child's concerns.</p>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-video"></i>
                     <h3>Schedule Appointments</h3>
                     <p>Schedule your Appointments and Consult Doctor</p>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-syringe"></i>
                     <h3>Vaccination</h3>
                     <p>Get your baby or yourself vaccinated at affordable rates.</p>
                 </div>
             </div>
         </section>
     </div>
-
     <script>
         function toggleSidebar() {
             let sidebar = document.getElementById("sidebar");
@@ -197,6 +188,5 @@
             content.classList.toggle("shift");
         }
     </script>
-
 </body>
 </html>

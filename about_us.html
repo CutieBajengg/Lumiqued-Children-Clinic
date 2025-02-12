@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Appointments</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,7 +14,7 @@
             display: flex;
         }
         .sidebar {
-            width: 250px;
+            width: 200px;
             height: 100vh;
             background: purple;
             color: white;
@@ -68,7 +68,7 @@
             border-radius: 5px;
         }
         .back-btn {
-            background: red;
+            background: grey;
             color: white;
             border: none;
             padding: 10px;
@@ -97,6 +97,23 @@
                 margin-left: 210px;
             }
         }
+        .cta-buttons {
+            margin-top: 20px;
+        }
+        .cta-buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background: purple;
+            color: white;
+            border-radius: 20px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .cta-buttons a:last-child {
+            background: none;
+            color: purple;
+            border: 1px solid purple;
+        }
     </style>
 </head>
 <body>
@@ -104,21 +121,25 @@
     <button class="menu-btn" onclick="toggleSidebar()">☰</button>
 
     <div class="sidebar" id="sidebar">
-        <button class="back-btn" onclick="toggleSidebar()">← Back</button>
+        <button class="back-btn" onclick="toggleSidebar()">←</button>
         <div class="logo"> 
             <img src="lcclogo.png" alt="LOGO">
         </div>
         <ul class="nav-links">
             <li><a href="home.html">HOME</a></li>
-            <li><a href="about_us.html">ABOUT US</a></li>
+            <li><a href="about_us.html">APPOINTMENTS</a></li>
             <li><a href="for_parents.html">FOR PARENTS</a></li>
             <li><a href="contact.html">CONTACT US</a></li>
         </ul>
     </div>
 
     <div class="content" id="content">
-        <h1>About Us</h1>
+        <h1>Appointments</h1>
         <p>Lumiqued Children's Clinic is determined to serve you.</p>
+        <div class="cta-buttons">
+            <a href="">CHAT WITH US</a>
+            <a href="schedule.html">Book Appointments</a>
+        </div>
     </div>
 
     <script>
